@@ -23,7 +23,7 @@ This project is summarized to:
 ## Package installation
 ### Pip
 
-Require: **Python 3.8**
+Require: **Python 3.9**
 
 ```zsh
 pip install contra-il6
