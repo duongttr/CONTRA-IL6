@@ -35,6 +35,20 @@ or
 pip install -U 'contra-il6 @ git+https://github.com/duongttr/CONTRA-IL6.git'
 ```
 
+### Minimum system requirements
+
+The package loads multiple large protein language models (ESM-2 3B, ESM-1 670M, ProtTrans T5-XL, SeqVec) simultaneously for inference. Please ensure your system meets the following requirements:
+
+| Component | Minimum | Recommended |
+|-----------|---------|-------------|
+| **Python** | 3.9 | 3.9+ |
+| **RAM** | 16 GB | 32 GB |
+| **Disk** | 30 GB free | 50 GB free |
+| **CPU** | x86_64, 4 cores | x86_64, 8+ cores |
+| **OS** | Linux / macOS / Windows | Linux |
+| **Internet** | Required (first run) | — |
+
+> **Note:** On first run, the tool will automatically download pre-trained model weights (~20 GB) for ESM-2, ESM-1, ProtTrans T5-XL, and SeqVec. Subsequent runs use cached weights. No GPU is required — all inference runs on CPU.
 
 ### How to use
 ```
